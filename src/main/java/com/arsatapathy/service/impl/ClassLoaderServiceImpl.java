@@ -20,7 +20,7 @@ public class ClassLoaderServiceImpl implements ClassLoaderService {
             try {
                 String authorName = type.getAnnotation(Author.class).name();
 
-                System.out.println("Class " + type.getName() + " authored by " + authorName);
+                System.out.println("Class " + type.getSimpleName() + " authored by " + authorName);
 
                 Constructor<?> constructor = type.getConstructor();
 
